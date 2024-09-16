@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vincent Pereti Portfolio1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="navbar-container"><h1>Vincent Pereti</h1>
+    <nav class="navbar"> 
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav> 
+</div> </header> <section class="hero"> 
+    <header-title>
+        <div class="navbar-container"> <h3>"Passionate Web Developer"</h3> 
+            <p>"Crafting Responsive, Modern Websites"</p> 
+        </div> </section> <section class="featured-content"> 
+      </header-title>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Cards Section -->
+        <section class="cards" id="home">
+            <div class="card" onclick="showBio()">
+                <h2>About Me</h2>
+            </div>
+            <div class="card" onclick="showEducation()">
+                <h2>Education</h2>
+            </div>
+            <div class="card" onclick="showWork()">
+                <h2>Work Experience</h2>
+            </div>
+            <div class="card" onclick="showProjects()">
+                <h2>Projects</h2>
+            </div>
+        </section>
+
+        <!-- Bio Section -->
+        <section id="bio" class="hidden-section">
+            <h2>About Me</h2>
+            <div class="container">
+                <div class="text-section">
+
+          <h1> Hello, I'm Vincent Pereti. </h1>
+      <p>I'm a passionate and dedicated web developer with a strong foundation in HTML5 and CSS3.
+        Currently expanding my skill set by diving deep into JavaScript, React, and Next.js,
+            I’m eager to take on real-world challenges and grow as a professional. 
+            Although I’m a fresher in the industry, I bring a relentless drive to learn, adapt, and create impactful solutions.
+            My goal is to secure a position where I can collaborate with experienced developers and contribute to meaningful projects. I’m excited to join a team where I can hone my skills, gain hands-on experience, and grow into a well-rounded web developer.
+            If you're looking for a motivated self-starter who's ready to grow and excel, I’m the perfect candidate for your team!</p>
+            </p>
+            </div>
+            <div class="image-section">
+                <img src="picture1.jpg" class="profile-picture" alt="Vincent Pereti">
+            </div>
+            </div>
+          </section>
+
+        <section id="education" class="hidden-section">
+            <h2>Education</h2>
+            <a href="cv.pdf" download>Download CV</a>
+        </section>
+
+        <!-- Work Section -->
+        <section id="work" class="hidden-section">
+            <h2>Work Experience</h2>
+            <p>Details about your work experience and relevant roles.</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="hidden-section">
+            <h2>Projects</h2>
+            <p>Links to websites or apps you’ve built.</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="hidden-section">
+            <h2>Contact Me</h2>
+            <div class="container">
+                <div class="text-section">
+                    <p>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="vinciepereti@gmail.com" required><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea><br>
+                <button type="submit">Send</button>
+            </form>
+        </p>
+            <p>Connect with me on <a href="https://linkedin.com" target="https://www.linkedin.com/in/vincent-pereti-89220a161/">LinkedIn</a> and <a href="https://facebook.com" target="_blank">Facebook</a>.</p>
+        </div>
+    </div>
+    </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Vincent Pereti &copy; 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

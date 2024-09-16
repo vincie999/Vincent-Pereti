@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+
+.text-column h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.text-column p {
+    font-size: 16px;
+    color: #333;
+}
+.bio{
+    display-grid-templa: 1fr 1fr;
+    margin: 10px, 10px, 10px, 10px;
+}
+.profile-picture {
+border-radius: 10px;
+}
+.text-section {
+color: white;
+}

@@ -1,0 +1,206 @@
+/* Global styles for basic elements */
+body, h1, h2, h3, h4, p, a {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    /*background-image: url('tech4.webp'); /* Replace with your image file path 
+    background-size: cover; /* Ensures the image covers the entire viewport 
+    background-repeat: no-repeat; /* Prevents the image from repeating 
+    background-attachment: fixed; /* Keeps the image fixed in place during scrolling 
+    background-position: center; */
+}
+
+/* Ensure body has enough height for scrolling */
+body {
+    min-height: 100vh; /* Minimum height is set to viewport height */
+    background-color: lightcyan; /* Optional background color */
+}
+
+/* Navbar styling */
+.navbar-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header title animation on hover */
+.header-title:hover {
+    animation: shine 1s ease-in-out;
+    background: linear-gradient(45deg, #00c9ff, #92fe9d); /* Changes color on hover */
+}
+
+@keyframes shine {
+    0% {
+        background-position: -200%;
+    }
+    100% {
+        background-position: 200%;
+    }
+}
+
+/* Header styling */
+.header {
+    background-color: #232f3e;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 24px;
+}
+
+/* Navbar link styling */
+.navbar {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Hero section styling */
+.hero {
+    background-color: #5a67d8;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.hero h2 {
+    font-size: 32px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Featured content section */
+.featured-content {
+    padding: 40px 0;
+}
+
+/* Main content area with proper spacing */
+main {
+    min-height: 1000px; /* Ensures scrolling space */
+    padding: 20px;
+}
+
+/* Cards layout */
+.cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.card {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card:hover {
+    background-color: #e0e0e0;
+}
+
+/* Hidden section */
+.hidden-section {
+    display: none;
+    margin-top: 20px;
+}
+
+/* Bio section */
+#bio p {
+    color: white;
+}
+
+/* Text section styling */
+.text-section {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.text-section h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.text-section p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Image section */
+.image-section {
+    flex: 1;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(12, 22, 218);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(26, 21, 21, 0.038);
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-section, .image-section {
+        padding: 0;
+    }
+
+    .text-section {
+        padding-bottom: 20px;
+    }
+
+    .text-section h1 {
+        font-size: 2em;
+    }
+
+    .text-section p {
+        font-size: 1rem;
+    }
+}
